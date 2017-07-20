@@ -1,0 +1,158 @@
+html, body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+}
+
+html, body, h1, h2, li, a, p {
+	font-weight: 200;
+}
+
+#bgd {
+	left: 0;
+	top: 0;
+	width: 100%;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+h1 {
+	color: white;
+	cursor: default;
+	font-size: 250%;
+	left: 25px;
+	position: absolute;
+	top: 0;
+}
+
+#nav {
+	list-style-type: none;
+	position: absolute;
+	right: 25px;
+	top: 29px;
+}
+
+#nav li {
+	display: inline;
+	margin-left: 40px;
+}
+
+#nav li a {
+	color: white;
+	font-size: 130%;
+	text-decoration: none;
+}
+
+h2 {
+	cursor: default;
+	font-size: 150%;
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+
+p, a {
+	font-size: 105%;
+}
+
+a {
+	color: #2cacbe;
+	text-decoration: none;
+}
+
+p, h2 {
+	cursor: default;
+}
+
+#about, #projects, #connect {
+	margin: 30px 0 60px 0;
+}
+
+#aboutBlurb {
+	margin: 0 auto;
+	width: 75%;
+}
+
+#projectsWrapper {
+	margin: 0 auto;
+	text-align: center;
+	width: 75%;
+}
+
+.project {
+	border: 1px solid black;
+	display: inline-block;
+	margin: 0 15px 30px 15px;
+	padding: 15px;
+	vertical-align: top;
+	width: 350px;
+}
+
+.projectHeader {
+	font-size: 115%;
+	margin: 0;
+}
+
+.projectInfo {
+	margin: 0 0 5px 0;
+}
+
+.projectImage {
+	height: 140px;
+	margin: 10px 0 5px;
+}
+
+.projectLink {
+	margin: 10px 0;
+}
+
+#connect {
+	height: 150px;
+}
+
+.connectLogos {
+	text-align: center;
+	width: 100%;
+}
+
+.connectLogo {
+	height: 50px;
+	margin: 0 2%;
+}
+
+
+@media only screen and (max-width: 700px) {
+	#nav {
+	    visibility: hidden;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
+    #nav {
+        visibility: hidden;
+    }
+    h1 {
+    	font-size: 325%;
+    }
+    h2 {
+    	font-size: 250%;
+    }
+    p {
+    	font-size: 160%;
+    }
+    #projectsWrapper {
+    	width: 50%;
+    }
+    .projectHeader {
+    	font-size: 180%;
+    }
+    .connectLogo {
+    	height: 80px;
+    	margin: 0 4%;
+    }
+    .projectLink {
+    	font-size: 160%;
+    }
+}

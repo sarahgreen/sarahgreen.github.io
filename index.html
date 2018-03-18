@@ -1,9 +1,15 @@
 <!doctype html>
 <html>
+
 	<head>
 		<title>Sarah Jaisser Green</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="styles.css"/>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 		<link rel="icon" href="favicon.png"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="script.js"></script>
@@ -11,75 +17,56 @@
 
 	<body>
 
-		<img id="bgd" src="bgd.jpg"/>
+		<div class="container-fluid">
 
-		<h1>Sarah Jaisser Green</h1>
+			<div class="row">
 
-		<ul id="nav">
-			<li><a href="#about">About</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#connect">Connect</a></li>
-		</ul>
+				<div id="mainContainer" class="col-md-6">
 
-		<div id="about">
-			<h2 class="subheader">About</h2>
-			<p id="aboutBlurb">
-				Hello! Welcome to my personal website. I am a young tech professional based in the San Francisco Bay Area. I graduated in May 2016 from Columbia University with a BA in Computer Science & Business Management. I have experience in product management, software engineering, UI/UX design, and web development. I am passionate about working across the product lifecycle to bring innovative, delightful user experiences to life. I am thrilled to be joining the team at LifeLink Inc. as a Product Associate.
+					<div id="main" class="content">
 
-				<br><br>Please contact me via <a href="http://linkedin.com/in/sarahtalia">LinkedIn</a> or <a href="mailto:sjaissergreen@gmail.com">email</a> if you'd like to connect. Thanks!</p>
-		</div>
+						<h1 id="name">Sarah Jaisser Green</h1>
 
-		<div id="projects">
-			<h2 class="subheader">Projects</h2>
-			<div id="projectsWrapper">
+						<h3 id="headline">I craft & deliver <br>human-centered technology.</h3>
 
-				<div class="project">
-					<p class="projectHeader">Dynamic Profile Cards</p>
-					<img class="projectImage" src="dynamicProfileCards.png"/>
-					<p class="projectInfo">This was my 2015 summer project as a Product Management & Design Intern at Lithium Technologies. I designed and scoped this new feature, which is a responsive UI component to preview user profiles on Lithium-powered sites.</p>
-					<a class="projectLink" target="_blank" href="https://github.com/sarahgreen/dynamic_profile_cards">See More on Github</a>
+						<ul id="nav">
+
+							<li class="navItem"><a class="navLink" href="#about">read about me</a></li>
+							<li class="navItem"><a class="navLink" target="_blank" href="https://linkedin.com/in/sarahtalia">connect on linkedin</a></li>
+							<li class="navItem"><a class="navLink" target="_blank" href="https://github.com/sarahgreen">view my github profile</a></li>
+							<li class="navItem"><a class="navLink" href="mailto:sjaissergreen@gmail.com">email me</a></li>
+
+						</ul>
+
+					</div>
+
 				</div>
 
-				<div class="project">
-					<p class="projectHeader">Angular Embed.ly</p>
-					<img class="projectImage" src="angularEmbedly.png"/>
-					<p class="projectInfo">This is an open-source JavaScript library that allows AngularJS apps to interact with the Embed.ly API. Embed.ly provides rich media embedding services. I built this as part of my summer project as a Software Engineering Intern at Lithium Technologies in 2014.</p>
-					<a class="projectLink" target="_blank" href="https://github.com/lithiumtech/angular-embedly">See More on Github</a>
-				</div>
+				<div id="photoContainer" class="col-md-6">
 
-				<div class="project">
-					<p class="projectHeader">Flickr Findr</p>
-					<img class="projectImage" src="flickrFindr.png"/>
-					<p class="projectInfo">This is a web app I built for fun. Flickr Findr searches the Flickr database for images based on search parameters inputted by the user.</p>
-					<a class="projectLink" target="_blank" href="https://github.com/sarahgreen/flickr_findr">See More on Github</a>
-				</div>
+					<img id="photo" src="photo.jpg"/>
 
-				<div class="project">
-					<p class="projectHeader">Commentator</p>
-					<img class="projectImage" src="commentator.png"/>
-					<p class="projectInfo">This is another web app I built for fun. Commentator fetches comments from New York Times articles based on search parameters inputted by the user.</p>
-					<a class="projectLink" target="_blank" href="https://github.com/sarahgreen/commentator">See More on Github</a>
-				</div>
-
-				<div class="project">
-					<p class="projectHeader">BookBags</p>
-					<img class="projectImage" src="bookBags.png"/>
-					<p class="projectInfo">This is a project I completed with a small group for COMS 4170: User Interface Design at Columbia University. BookBags uses the New York Times Book API and the Amazon Product API to allow the user to organize lists of books and receive curated recommendations.</p>
-					<a class="projectLink" target="_blank" href="https://github.com/sarahgreen/bookbags">See More on Github</a>
 				</div>
 
 			</div>
-		</div>
 
-		<div id="connect">
-			<h2 class="subheader">Connect</h2>
+			<div class="row">
 
-			<div class="connectLogos">
-				<a href="mailto:sjaissergreen@gmail.com"><img class="connectLogo" src="gmail.png"/></a>
-				<a target="_blank" href="http://github.com/sarahgreen"><img class="connectLogo" src="github.png"/></a>
-				<a target="_blank" href="http://linkedin.com/in/sarahtalia"><img class="connectLogo" src="linkedin.png"/>
+				<div id="about" class="content">
+
+					<h2 id="aboutme">about me</h2>
+
+					<p class="paragraph">I am a product manager with a penchant for human-centered design and data-driven decision making. I am currently focused on crafting and delivering conversational healthcare solutions at <a class="bodyLink" target="_blank" href="https://lifelink.com">LifeLink</a> as a core member of our Product team.</p>
+					<p class="paragraph">At LifeLink, I design chatbot experiences using a human-centered approach that balances user research & testing, business requirements, customer input, and conversational design principles. I implement my designs using LifeLink’s proprietary, Javascript-based chatbot programming language. In addition, I am responsible for product management tasks including sprint planning, release management, backlog grooming, and QA.</p>
+					<p class="paragraph">I graduated from Columbia University with a BA in Computer Science & Business Management. My studies also included courses in math, literature, and sociology. Throughout my education I explored questions at the intersection of technology, ethics, society, and the arts.</p>
+					<p class="paragraph">A native of the San Francisco Bay Area, I am currently based in Oakland, CA. In my spare time I enjoy reading, yoga, and exploring the California coast.</p>
+
+				</div>
+
 			</div>
+
 		</div>
 
 	</body>
+
 </html>

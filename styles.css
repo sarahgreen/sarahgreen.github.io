@@ -1,158 +1,78 @@
 html, body {
-	font-family: 'Source Sans Pro', sans-serif;
+	background-color: black;
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 }
 
-html, body, h1, h2, li, a, p {
-	font-weight: 200;
+#name, #headline, #aboutme, #paragraph, .navLink, .bodyLink {
+	font-weight: 700;
+	margin: 0;
 }
 
-#bgd {
-	left: 0;
-	top: 0;
-	width: 100%;
-	user-drag: none; 
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+#mainContainer, #photoContainer {
+	margin: 0;
+	padding: 0;
 }
 
-h1 {
+.content {
+	padding: 177px 68px 110px 68px;
+}
+
+#main {
+	background-color: black;
 	color: white;
-	cursor: default;
-	font-size: 250%;
-	left: 25px;
-	position: absolute;
-	top: 0;
+}
+
+#name {
+	font-size: 42px;
+	margin-bottom: 16px;
+}
+
+#headline {
+	font-size: 26px;
+	margin-bottom: 110px;
 }
 
 #nav {
 	list-style-type: none;
-	position: absolute;
-	right: 25px;
-	top: 29px;
+	padding: 0;
 }
 
-#nav li {
-	display: inline;
-	margin-left: 40px;
+.navItem {
+	margin-bottom: 10px;
 }
 
-#nav li a {
-	color: white;
-	font-size: 130%;
-	text-decoration: none;
+.navLink:link, .navLink:visited, .navLink:active {
+	color: #E3E3E3;
 }
 
-h2 {
-	cursor: default;
-	font-size: 150%;
-	margin: 0 0 20px 0;
-	text-align: center;
+.navLink:hover {
+	color: #337ab7;
 }
 
-p, a {
-	font-size: 105%;
-}
-
-a {
-	color: #2cacbe;
-	text-decoration: none;
-}
-
-p, h2 {
-	cursor: default;
-}
-
-#about, #projects, #connect {
-	margin: 30px 0 60px 0;
-}
-
-#aboutBlurb {
-	margin: 0 auto;
-	width: 75%;
-}
-
-#projectsWrapper {
-	margin: 0 auto;
-	text-align: center;
-	width: 75%;
-}
-
-.project {
-	border: 1px solid black;
-	display: inline-block;
-	margin: 0 15px 30px 15px;
-	padding: 15px;
-	vertical-align: top;
-	width: 350px;
-}
-
-.projectHeader {
-	font-size: 115%;
-	margin: 0;
-}
-
-.projectInfo {
-	margin: 0 0 5px 0;
-}
-
-.projectImage {
-	height: 140px;
-	margin: 10px 0 5px;
-}
-
-.projectLink {
-	margin: 10px 0;
-}
-
-#connect {
-	height: 150px;
-}
-
-.connectLogos {
-	text-align: center;
+#photo {
+	vertical-align: bottom;
 	width: 100%;
 }
 
-.connectLogo {
-	height: 50px;
-	margin: 0 2%;
+#about {
+	color: black;
+	background-color: #E3E3E3;
 }
 
-
-@media only screen and (max-width: 700px) {
-	#nav {
-	    visibility: hidden;
-	}
+#aboutme {
+	font-size: 42px;
+	margin-bottom: 110px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
-    #nav {
-        visibility: hidden;
-    }
-    h1 {
-    	font-size: 325%;
-    }
-    h2 {
-    	font-size: 250%;
-    }
-    p {
-    	font-size: 160%;
-    }
-    #projectsWrapper {
-    	width: 50%;
-    }
-    .projectHeader {
-    	font-size: 180%;
-    }
-    .connectLogo {
-    	height: 80px;
-    	margin: 0 4%;
-    }
-    .projectLink {
-    	font-size: 160%;
-    }
+.paragraph {
+	margin-bottom: 26px;
+}
+
+p, a {
+	font-size: 16px;
+}
+
+a:link, a:hover, a:visited, a:active {
+	text-decoration: none;
 }
